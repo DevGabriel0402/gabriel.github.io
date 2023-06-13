@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js" defer></script>
+    <title>Validação de dados</title>
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <h1 class="titulo" id="title">Formulário</h1>
+      <input
+        type="text"
+        id="nome"
+        class="inputNome"
+        placeholder="informe aqui seu nome"
+      />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="inputEmail"
+        placeholder="Informe aqui seu e-mail"
+      />
+      <textarea
+        name="areaTexto"
+        id="areaTexto"
+        cols="50"
+        rows="10"
+        placeholder="Informe aqui sua mensagem"
+      ></textarea>
+      <button type="submit" onclick="enviarDadosParaGoogleSheets()">
+        Enviar
+      </button>
+    </form>
+  </body>
+</html>
