@@ -22,7 +22,7 @@ function enviarDadosParaGoogleSheets() {
           gapi.client.sheets.spreadsheets.values
             .append({
               spreadsheetId: "1pmWU-o7xVsWPSPxc66_Pdq-nu8L4M09mjPJNGZQi6c0",
-              range: "dados!A:C", // Intervalo para adicionar os dados (ajuste conforme necessário)
+              range: "dados!A1:C1", // Intervalo para adicionar os dados (ajuste conforme necessário)
               valueInputOption: "USER_ENTERED",
               resource: {
                 values: [[nome, email, mensagem]],
